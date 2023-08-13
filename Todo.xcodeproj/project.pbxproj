@@ -11,6 +11,7 @@
 		51FB1C332A896E3100A66A11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FB1C322A896E3100A66A11 /* ContentView.swift */; };
 		51FB1C352A896E3100A66A11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51FB1C342A896E3100A66A11 /* Assets.xcassets */; };
 		51FB1C382A896E3100A66A11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51FB1C372A896E3100A66A11 /* Preview Assets.xcassets */; };
+		51FB1C3F2A896EF400A66A11 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FB1C3E2A896EF400A66A11 /* Todo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		51FB1C322A896E3100A66A11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		51FB1C342A896E3100A66A11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51FB1C372A896E3100A66A11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		51FB1C3E2A896EF400A66A11 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				51FB1C322A896E3100A66A11 /* ContentView.swift */,
 				51FB1C342A896E3100A66A11 /* Assets.xcassets */,
 				51FB1C362A896E3100A66A11 /* Preview Content */,
+				51FB1C3E2A896EF400A66A11 /* Todo.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51FB1C332A896E3100A66A11 /* ContentView.swift in Sources */,
+				51FB1C3F2A896EF400A66A11 /* Todo.swift in Sources */,
 				51FB1C312A896E3100A66A11 /* TodoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

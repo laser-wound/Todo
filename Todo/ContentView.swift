@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var todos = [Todo(title:"shower the baby"),Todo(title:"Feed the baby"),Todo(title:"change the babys diaper"),Todo( title:"Play with the baby"),Todo( title:"Dance with the baby")]
+    
+    
+    
+    
+    
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack{
+                List(todos) { todo in
+                    Text(todo.title)
+                }
+                .navigationTitle("Todos")            }
         }
-        .padding()
     }
 }
 

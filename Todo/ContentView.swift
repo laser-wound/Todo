@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var todos = [Todo(title:"shower the baby"),Todo(title:"Feed the baby"),Todo(title:"change the babys diaper"),Todo( title:"Play with the baby"),Todo( title:"Dance with the baby")]
+    @State private var todos = [Todo(title:"shower the baby", iscompleted: true),Todo(title:"Feed the baby"),Todo(title:"change the babys diaper"),Todo( title:"Play with the baby"),Todo( title:"Dance with the baby")]
     
     
     
@@ -18,14 +18,23 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            VStack{
-                List(todos) { todo in
-                    Text(todo.title)
+                List($todos) { $todo in
+                    HStack{
+                        Image(systemName:
+                                todo.iscompleted ? "checkmark.circle.fill" : "circle")
+                        .onTapGesture {
+                            todo.iscompleted.toggle()
+                        }
+                        
+                        Text(todo.title)
+                            .strikethrough(todo.iscompleted)
+                    }
+                    
                 }
                 .navigationTitle("Todos")            }
         }
     }
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
